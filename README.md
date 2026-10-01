@@ -6,7 +6,7 @@ language_creators:
 language:
   - bn
   - en
-license: mit
+license: apache-2.0
 multilinguality:
   - multilingual
 size_categories:
@@ -257,12 +257,16 @@ print(ds_curated["train"][0])
 5. **Moha Jadu** (2,235 comments)
 6. *...and 28 other popular tracks.*
 
-Visualizations and summary CSV reports are available inside the `insights/` directory:
-- `insights/sentiment_by_song.png`
-- `insights/net_sentiment_by_season.png`
-- `insights/net_sentiment_trend.png`
-- `insights/sentiment_by_song.csv`
-- `insights/sentiment_by_season.csv`
+### Visualizations & Insights
+
+#### Sentiment Distribution by Song
+![Sentiment Distribution by Song](https://huggingface.co/datasets/ragibhasan/coke_studio_bangla_sentiment/resolve/main/insights/sentiment_by_song.png)
+
+#### Net Sentiment Trend
+![Net Sentiment Trend](https://huggingface.co/datasets/ragibhasan/coke_studio_bangla_sentiment/resolve/main/insights/net_sentiment_trend.png)
+
+#### Net Sentiment by Season
+![Net Sentiment by Season](https://huggingface.co/datasets/ragibhasan/coke_studio_bangla_sentiment/resolve/main/insights/net_sentiment_by_season.png)
 
 ---
 
@@ -275,36 +279,6 @@ Visualizations and summary CSV reports are available inside the `insights/` dire
 
 ---
 
-## Uploading to Hugging Face Hub
-
-If you are uploading this folder to a new Hugging Face dataset repository:
-
-### Method 1: Using the provided `upload_to_hf.py` script
-```bash
-# 1. Login to Hugging Face
-huggingface-cli login
-
-# 2. Upload the entire folder
-python upload_to_hf.py --repo-id <your-hf-username>/<your-repo-name>
-```
-
-### Method 2: Using `huggingface-cli`
-```bash
-huggingface-cli upload <your-hf-username>/<your-repo-name> . . --repo-type=dataset
-```
-
-### Method 3: Using Git & Git LFS
-```bash
-git init
-git lfs install
-git remote add origin https://huggingface.co/datasets/<your-hf-username>/<your-repo-name>
-git add .
-git commit -m "Initial commit of Coke Studio Bangla Sentiment Dataset"
-git push -u origin main
-```
-
----
-
 ## Citation & Attribution
 
 If you use this dataset in your research or project, please cite:
@@ -312,12 +286,12 @@ If you use this dataset in your research or project, please cite:
 ```bibtex
 @dataset{coke_studio_bangla_sentiment,
   title={Coke Studio Bangla YouTube Comments Sentiment Dataset},
-  author={Coke Studio Bangla Analysis Project},
+  author={Hasan, Ragib},
   year={2024},
   publisher={Hugging Face},
-  howpublished={\url{https://huggingface.co/datasets}}
+  howpublished={\url{https://huggingface.co/datasets/ragibhasan/coke_studio_bangla_sentiment}}
 }
 ```
 
 ## License
-This dataset is distributed under the [MIT License](https://opensource.org/licenses/MIT). YouTube comments remain subject to YouTube's Terms of Service.
+This dataset is distributed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). YouTube comments remain subject to YouTube's Terms of Service.
