@@ -285,11 +285,13 @@ If you use this dataset in your research or project, please cite:
 
 ```bibtex
 @dataset{coke_studio_bangla_sentiment,
-  title={Coke Studio Bangla YouTube Comments Sentiment Dataset},
-  author={Hasan, Ragib},
-  year={2024},
-  publisher={Hugging Face},
-  howpublished={\url{https://huggingface.co/datasets/ragibhasan/coke_studio_bangla_sentiment}}
+  author       = {Hasan, Ragib},
+  title        = {Coke Studio Bangla YouTube Comments Sentiment Dataset},
+  year         = {2026},
+  publisher    = {Hugging Face},
+  version      = {226b36f},
+  doi          = {10.57967/hf/10724},
+  url          = {https://huggingface.co/datasets/ragibhasan/coke_studio_bangla_sentiment}
 }
 ```
 
