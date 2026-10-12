@@ -285,7 +285,7 @@ If you use this dataset in your research or project, please cite:
 
 ```bibtex
 @dataset{coke_studio_bangla_sentiment,
-  author       = {Hasan, Ragib},
+  author       = {Hasan, Ragib and Sen Toma, Indrani and Galib, Asadulla Hel},
   title        = {Coke Studio Bangla YouTube Comments Sentiment Dataset},
   year         = {2026},
   publisher    = {Hugging Face},
