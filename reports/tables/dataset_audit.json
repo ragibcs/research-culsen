@@ -1,0 +1,177 @@
+{
+  "dataset_name": "Coke Studio Bangla Sentiment Dataset",
+  "total_records": 57592,
+  "total_columns": 26,
+  "columns": {
+    "comment_id": "str",
+    "video_id": "str",
+    "song": "str",
+    "season": "int64",
+    "topic": "str",
+    "subtopic": "str",
+    "text_clean": "str",
+    "text_raw": "str",
+    "emojis": "str",
+    "script": "str",
+    "n_chars": "int64",
+    "n_words": "int64",
+    "n_emoji": "int64",
+    "votes": "int64",
+    "is_reply": "bool",
+    "parent_cid": "str",
+    "has_heart": "bool",
+    "published_at": "datetime64[ns, UTC]",
+    "author_id": "str",
+    "p_negative": "float32",
+    "p_neutral": "float32",
+    "p_positive": "float32",
+    "sentiment": "str",
+    "confidence": "float32",
+    "sentiment_model": "str",
+    "needs_review": "bool"
+  },
+  "missing_values": {
+    "comment_id": 0,
+    "video_id": 0,
+    "song": 0,
+    "season": 0,
+    "topic": 0,
+    "subtopic": 0,
+    "text_clean": 0,
+    "text_raw": 0,
+    "emojis": 0,
+    "script": 0,
+    "n_chars": 0,
+    "n_words": 0,
+    "n_emoji": 0,
+    "votes": 0,
+    "is_reply": 0,
+    "parent_cid": 0,
+    "has_heart": 0,
+    "published_at": 0,
+    "author_id": 0,
+    "p_negative": 0,
+    "p_neutral": 0,
+    "p_positive": 0,
+    "sentiment": 0,
+    "confidence": 0,
+    "sentiment_model": 0,
+    "needs_review": 0
+  },
+  "sentiment_distribution": {
+    "counts": {
+      "positive": 36167,
+      "neutral": 10945,
+      "negative": 10480
+    },
+    "percentages": {
+      "positive": 62.798652590637595,
+      "neutral": 19.004375607723293,
+      "negative": 18.196971801639116
+    }
+  },
+  "confidence_statistics": {
+    "mean": 0.7537525296211243,
+    "std": 0.21961918473243713,
+    "min": 0.33375877141952515,
+    "median": 0.8172717094421387,
+    "max": 0.9973768591880798,
+    "below_0_60": 16840,
+    "below_0_70": 21825
+  },
+  "unique_seasons": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "unique_videos_count": 33,
+  "season_distribution": {
+    "1": {
+      "total_comments": 15537,
+      "sentiment_counts": {
+        "positive": 9896,
+        "neutral": 2895,
+        "negative": 2746
+      },
+      "unique_videos": 8
+    },
+    "2": {
+      "total_comments": 20561,
+      "sentiment_counts": {
+        "positive": 13088,
+        "neutral": 3812,
+        "negative": 3661
+      },
+      "unique_videos": 12
+    },
+    "3": {
+      "total_comments": 14553,
+      "sentiment_counts": {
+        "positive": 9174,
+        "neutral": 2850,
+        "negative": 2529
+      },
+      "unique_videos": 8
+    },
+    "4": {
+      "total_comments": 6941,
+      "sentiment_counts": {
+        "positive": 4009,
+        "negative": 1544,
+        "neutral": 1388
+      },
+      "unique_videos": 5
+    }
+  },
+  "duplication": {
+    "exact_duplicate_comments": 1344,
+    "normalized_duplicate_comments": 1344,
+    "distinct_normalized_texts": 56248,
+    "texts_spanning_multiple_videos": 649
+  },
+  "length_statistics": {
+    "char_length": {
+      "mean": 73.61867967773301,
+      "std": 110.26889387464162,
+      "median": 41.0,
+      "min": 2,
+      "max": 1945,
+      "p25": 20.0,
+      "p75": 85.0,
+      "p95": 234.0
+    },
+    "word_length": {
+      "mean": 12.963762328101126,
+      "std": 19.065660879467636,
+      "median": 7.0,
+      "min": 1,
+      "max": 388,
+      "p25": 4.0,
+      "p75": 15.0,
+      "p95": 40.0
+    }
+  },
+  "script_distribution": {
+    "counts": {
+      "latin": 32098,
+      "bangla": 23877,
+      "mixed": 1518,
+      "emoji_or_other": 99
+    },
+    "percentages": {
+      "latin": 55.733435199333236,
+      "bangla": 41.458883178219196,
+      "mixed": 2.635782747603834,
+      "emoji_or_other": 0.1718988748437283
+    }
+  },
+  "linguistic_features": {
+    "comments_with_emojis": 26154,
+    "comments_with_emojis_pct": 45.41255729962495,
+    "comments_with_negation": 3515,
+    "comments_with_negation_pct": 6.103278233087929,
+    "flagged_needs_review": 16840,
+    "flagged_needs_review_pct": 29.240172246145296
+  }
+}

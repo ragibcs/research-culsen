@@ -1,0 +1,217 @@
+{
+  "season_1": {
+    "protocol": "Protocol B (Held-Out Season 1)",
+    "held_out_test_season": 1,
+    "source_seasons": [
+      2,
+      3,
+      4
+    ],
+    "train_samples": 35753,
+    "val_samples": 5433,
+    "test_samples": 15537,
+    "train_videos": [
+      "zEqqW-USajs",
+      "VlYxhuSq3_s",
+      "QlThVkf0fZc",
+      "ZmQB2Hnp2Rc",
+      "3vDyCnOHo7w",
+      "xk1Tkq_GUaM",
+      "MX_307s6-CE",
+      "8pgvTBikV9U",
+      "YxJjFjP0crs",
+      "_UZ5ef4yhlA",
+      "AQz9eguOkgg",
+      "LQ3677p5NWg",
+      "sqJ2QhjBQaw",
+      "aB8Wa_SkX1M",
+      "tehuE1VuPAs",
+      "lDmeeqIfdIg",
+      "zN7iK3-tJXw",
+      "O8yq399dsyk",
+      "UghMf59vDJM",
+      "_17WrPo4mbA",
+      "mT9Z0nYP70I",
+      "NDCKWwcvuV0"
+    ],
+    "val_videos": [
+      "PfdQQE42Si4",
+      "a7V9bUwc4cU",
+      "1_Hfi1EV0-k"
+    ],
+    "leakage_verification": {
+      "status": "PASSED",
+      "train_samples": 35753,
+      "val_samples": 5433,
+      "test_samples": 15537,
+      "group_check": {
+        "train_unique_videos": 22,
+        "val_unique_videos": 3,
+        "test_unique_videos": 8
+      },
+      "text_leakage_count": 0,
+      "id_leakage_count": 0
+    }
+  },
+  "season_2": {
+    "protocol": "Protocol B (Held-Out Season 2)",
+    "held_out_test_season": 2,
+    "source_seasons": [
+      1,
+      3,
+      4
+    ],
+    "train_samples": 30312,
+    "val_samples": 5798,
+    "test_samples": 20561,
+    "train_videos": [
+      "8pgvTBikV9U",
+      "QDQG0wZEPkc",
+      "LGCvRk7judU",
+      "UghMf59vDJM",
+      "AQz9eguOkgg",
+      "tehuE1VuPAs",
+      "sMwKrxZKUSc",
+      "YxJjFjP0crs",
+      "9c1NIrAqXe4",
+      "Q_vrGCz9TXw",
+      "zEqqW-USajs",
+      "L-arhlgPiy8",
+      "VlYxhuSq3_s",
+      "PfdQQE42Si4",
+      "QlThVkf0fZc",
+      "bmrN8Cw1zX4",
+      "xk1Tkq_GUaM",
+      "NDCKWwcvuV0"
+    ],
+    "val_videos": [
+      "4Q6Yn1LpIBI",
+      "sqJ2QhjBQaw",
+      "mT9Z0nYP70I"
+    ],
+    "leakage_verification": {
+      "status": "PASSED",
+      "train_samples": 30312,
+      "val_samples": 5798,
+      "test_samples": 20561,
+      "group_check": {
+        "train_unique_videos": 18,
+        "val_unique_videos": 3,
+        "test_unique_videos": 12
+      },
+      "text_leakage_count": 0,
+      "id_leakage_count": 0
+    }
+  },
+  "season_3": {
+    "protocol": "Protocol B (Held-Out Season 3)",
+    "held_out_test_season": 3,
+    "source_seasons": [
+      1,
+      2,
+      4
+    ],
+    "train_samples": 36060,
+    "val_samples": 6051,
+    "test_samples": 14553,
+    "train_videos": [
+      "Q_vrGCz9TXw",
+      "O8yq399dsyk",
+      "YxJjFjP0crs",
+      "3vDyCnOHo7w",
+      "sMwKrxZKUSc",
+      "L-arhlgPiy8",
+      "4Q6Yn1LpIBI",
+      "QlThVkf0fZc",
+      "_17WrPo4mbA",
+      "9c1NIrAqXe4",
+      "AQz9eguOkgg",
+      "lDmeeqIfdIg",
+      "a7V9bUwc4cU",
+      "mT9Z0nYP70I",
+      "aB8Wa_SkX1M",
+      "zN7iK3-tJXw",
+      "LQ3677p5NWg",
+      "QDQG0wZEPkc",
+      "ZmQB2Hnp2Rc",
+      "bmrN8Cw1zX4",
+      "LGCvRk7judU"
+    ],
+    "val_videos": [
+      "MX_307s6-CE",
+      "_UZ5ef4yhlA",
+      "1_Hfi1EV0-k",
+      "tehuE1VuPAs"
+    ],
+    "leakage_verification": {
+      "status": "PASSED",
+      "train_samples": 36060,
+      "val_samples": 6051,
+      "test_samples": 14553,
+      "group_check": {
+        "train_unique_videos": 21,
+        "val_unique_videos": 4,
+        "test_unique_videos": 8
+      },
+      "text_leakage_count": 0,
+      "id_leakage_count": 0
+    }
+  },
+  "season_4": {
+    "protocol": "Protocol B (Held-Out Season 4)",
+    "held_out_test_season": 4,
+    "source_seasons": [
+      1,
+      2,
+      3
+    ],
+    "train_samples": 42896,
+    "val_samples": 6991,
+    "test_samples": 6941,
+    "train_videos": [
+      "1_Hfi1EV0-k",
+      "QDQG0wZEPkc",
+      "_17WrPo4mbA",
+      "lDmeeqIfdIg",
+      "PfdQQE42Si4",
+      "Q_vrGCz9TXw",
+      "VlYxhuSq3_s",
+      "3vDyCnOHo7w",
+      "9c1NIrAqXe4",
+      "L-arhlgPiy8",
+      "4Q6Yn1LpIBI",
+      "ZmQB2Hnp2Rc",
+      "sMwKrxZKUSc",
+      "8pgvTBikV9U",
+      "zEqqW-USajs",
+      "sqJ2QhjBQaw",
+      "_UZ5ef4yhlA",
+      "zN7iK3-tJXw",
+      "aB8Wa_SkX1M",
+      "LQ3677p5NWg",
+      "O8yq399dsyk",
+      "UghMf59vDJM",
+      "a7V9bUwc4cU",
+      "LGCvRk7judU"
+    ],
+    "val_videos": [
+      "NDCKWwcvuV0",
+      "xk1Tkq_GUaM",
+      "MX_307s6-CE",
+      "bmrN8Cw1zX4"
+    ],
+    "leakage_verification": {
+      "status": "PASSED",
+      "train_samples": 42896,
+      "val_samples": 6991,
+      "test_samples": 6941,
+      "group_check": {
+        "train_unique_videos": 24,
+        "val_unique_videos": 4,
+        "test_unique_videos": 5
+      },
+      "text_leakage_count": 0,
+      "id_leakage_count": 0
+    }
+  }
+}

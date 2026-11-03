@@ -1,0 +1,40 @@
+experiment:
+  project_name: "CulSen-BN"
+  version: "1.0.0"
+  random_seeds: [42, 123, 456, 789, 2024]
+  device: "cuda"  # fallback to "cpu"
+  mixed_precision: true
+
+experiments:
+  E1_baselines:
+    enabled: true
+    models: ["char_svm", "banglabert", "xlm_roberta"]
+  E2_label_reliability:
+    enabled: true
+    human_annotations_file: "data/annotations/human_verified_test.csv"
+  E3_uncertainty_aware:
+    enabled: true
+    variants: ["standard_ce", "label_smoothing", "confidence_weighted", "confidence_filtered"]
+  E4_contrastive_learning:
+    enabled: true
+    variants: ["ce_only", "ce_supcon", "ce_confidence_filtered_supcon"]
+  E5_cross_season:
+    enabled: true
+    protocol: "leave_one_season_out"
+    test_seasons: [1, 2, 3, 4]
+  E6_linguistic_robustness:
+    enabled: true
+    subgroups: ["bn_script", "banglish", "mixed", "emoji_heavy", "negation", "ambiguous"]
+  E7_synthetic_noise:
+    enabled: true
+    noise_rates: [0.05, 0.10, 0.20, 0.30]
+    corruption_type: "symmetric"
+  E8_ablation:
+    enabled: true
+    variants:
+      B0: {uncertainty: false, contrastive: false, domain_inv: false, consistency: false}
+      B1: {uncertainty: true,  contrastive: false, domain_inv: false, consistency: false}
+      B2: {uncertainty: false, contrastive: true,  domain_inv: false, consistency: false}
+      B3: {uncertainty: true,  contrastive: true,  domain_inv: false, consistency: false}
+      B4: {uncertainty: true,  contrastive: true,  domain_inv: true,  consistency: false}
+      B5_full: {uncertainty: true, contrastive: true, domain_inv: true, consistency: true}

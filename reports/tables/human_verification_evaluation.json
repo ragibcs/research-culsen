@@ -1,0 +1,9 @@
+{
+  "annotation_progress": {
+    "total_samples": 800,
+    "reviewed_count": 0,
+    "unreviewed_count": 800,
+    "completion_rate_pct": 0.0,
+    "disagreement_rate_pct": 0.0
+  }
+}

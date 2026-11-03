@@ -1,0 +1,48 @@
+# Environments
+.venv/
+env/
+venv/
+ENV/
+*.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Model checkpoints and weights
+artifacts/*.pt
+artifacts/*.pth
+artifacts/*.bin
+artifacts/*.safetensors
+artifacts/checkpoints/
+artifacts/runs/
+*.ckpt
+
+# Large data files and raw downloads
+data/raw/*.parquet
+data/interim/*
+data/processed/*.parquet
+!data/full/train-00000-of-00001.parquet
+!data/curated/train-00000-of-00001.parquet
+
+# Private / In-progress Annotations
+data/annotations/*_private.csv
+data/annotations/*_annotator*.csv
+!data/annotations/annotation_guidelines.md
+!data/annotations/annotation_template.csv
+
+# System files
+.DS_Store
+Thumbs.db

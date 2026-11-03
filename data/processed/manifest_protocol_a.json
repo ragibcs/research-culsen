@@ -1,0 +1,63 @@
+{
+  "protocol": "Protocol A (Video-Grouped In-Domain)",
+  "random_seed": 42,
+  "total_samples": 57009,
+  "train_samples": 39398,
+  "train_pct": 69.1083863951306,
+  "val_samples": 8439,
+  "val_pct": 14.802925853812557,
+  "test_samples": 9172,
+  "test_pct": 16.088687751056852,
+  "train_videos": [
+    "4Q6Yn1LpIBI",
+    "sMwKrxZKUSc",
+    "L-arhlgPiy8",
+    "QDQG0wZEPkc",
+    "LGCvRk7judU",
+    "bmrN8Cw1zX4",
+    "MX_307s6-CE",
+    "O8yq399dsyk",
+    "_UZ5ef4yhlA",
+    "lDmeeqIfdIg",
+    "zN7iK3-tJXw",
+    "LQ3677p5NWg",
+    "aB8Wa_SkX1M",
+    "_17WrPo4mbA",
+    "8pgvTBikV9U",
+    "sqJ2QhjBQaw",
+    "xk1Tkq_GUaM",
+    "UghMf59vDJM",
+    "NDCKWwcvuV0",
+    "VlYxhuSq3_s",
+    "tehuE1VuPAs",
+    "QlThVkf0fZc",
+    "mT9Z0nYP70I"
+  ],
+  "val_videos": [
+    "Q_vrGCz9TXw",
+    "a7V9bUwc4cU",
+    "ZmQB2Hnp2Rc",
+    "PfdQQE42Si4",
+    "AQz9eguOkgg"
+  ],
+  "test_videos": [
+    "9c1NIrAqXe4",
+    "1_Hfi1EV0-k",
+    "3vDyCnOHo7w",
+    "zEqqW-USajs",
+    "YxJjFjP0crs"
+  ],
+  "leakage_verification": {
+    "status": "PASSED",
+    "train_samples": 39398,
+    "val_samples": 8439,
+    "test_samples": 9172,
+    "group_check": {
+      "train_unique_videos": 23,
+      "val_unique_videos": 5,
+      "test_unique_videos": 5
+    },
+    "text_leakage_count": 0,
+    "id_leakage_count": 0
+  }
+}

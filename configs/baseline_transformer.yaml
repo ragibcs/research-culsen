@@ -1,0 +1,44 @@
+model:
+  candidates:
+    - name: "banglabert"
+      pretrained_model_name: "sagorsarker/banglabert"
+      tokenizer_name: "sagorsarker/banglabert"
+    - name: "xlm_roberta"
+      pretrained_model_name: "xlm-roberta-base"
+      tokenizer_name: "xlm-roberta-base"
+  default_model: "banglabert"
+  max_length: 128
+  num_labels: 2
+  id2label:
+    0: "negative"
+    1: "positive"
+  label2id:
+    "negative": 0
+    "positive": 1
+
+training:
+  batch_size: 16
+  gradient_accumulation_steps: 2
+  learning_rate: 2.0e-5
+  classifier_lr: 1.0e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.10
+  num_epochs: 5
+  max_grad_norm: 1.0
+  fp16: true
+  seed: 42
+  evaluation_strategy: "epoch"
+  save_strategy: "epoch"
+  metric_for_best_model: "macro_f1"
+  greater_is_better: true
+  early_stopping_patience: 2
+
+data:
+  split_file: "data/processed/splits_protocol_a.parquet"
+  text_column: "text_clean"
+  label_column: "sentiment"
+
+output:
+  artifacts_dir: "artifacts/baseline_transformer"
+  logs_dir: "artifacts/baseline_transformer/logs"
+  metrics_file: "reports/tables/baseline_transformer_metrics.json"

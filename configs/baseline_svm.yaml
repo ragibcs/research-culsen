@@ -1,0 +1,28 @@
+model:
+  type: "char_tfidf_svm"
+  vectorizer:
+    analyzer: "char"
+    ngram_range: [2, 5]
+    min_df: 2
+    max_features: 300000
+    sublinear_tf: true
+  classifier:
+    loss: "squared_hinge"
+    penalty: "l2"
+    dual: "auto"
+    tol: 0.0001
+    C: 1.0
+    class_weight: "balanced"
+    random_state: 42
+    max_iter: 3000
+
+data:
+  split_file: "data/processed/splits_protocol_a.parquet"
+  text_column: "text_clean"
+  label_column: "sentiment"
+  target_classes: ["negative", "positive"]
+
+output:
+  artifacts_dir: "artifacts/baseline_svm"
+  metrics_file: "reports/tables/baseline_svm_metrics.json"
+  predictions_file: "artifacts/baseline_svm/test_predictions.parquet"

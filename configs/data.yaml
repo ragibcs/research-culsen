@@ -1,0 +1,37 @@
+dataset:
+  name: "coke_studio_bangla_sentiment"
+  hf_repo: "ragibhasan/coke_studio_bangla_sentiment"
+  local_raw_path: "data/raw/full.parquet"
+  local_curated_path: "data/raw/curated.parquet"
+  processed_dir: "data/processed"
+  annotations_dir: "data/annotations"
+  reports_dir: "reports"
+  figures_dir: "reports/figures"
+  tables_dir: "reports/tables"
+
+preprocessing:
+  normalize_unicode: true
+  preserve_emojis: true
+  preserve_negation: true
+  min_char_length: 2
+  max_char_length: 2000
+
+splitting:
+  random_seed: 42
+  protocol_a:
+    name: "video_grouped_in_domain"
+    train_ratio: 0.70
+    val_ratio: 0.15
+    test_ratio: 0.15
+    group_col: "video_id"
+    stratify_col: "sentiment"
+  protocol_b:
+    name: "held_out_season"
+    season_col: "season"
+    seasons: [1, 2, 3, 4]
+    val_ratio: 0.15
+
+annotation:
+  target_sample_size: 800
+  stratify_by: ["season", "sentiment", "script"]
+  challenge_sample_size: 200

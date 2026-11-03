@@ -1,0 +1,16 @@
+contrastive:
+  projection_dim: 128
+  hidden_dim: 768
+  temperature: 0.07
+  loss_weight_alpha: 0.20
+  filter_uncertain_pairs: true
+  min_pair_confidence: 0.70
+  pooling: "mean"
+  normalize_embeddings: true
+
+training:
+  batch_size: 32
+  learning_rate: 2.0e-5
+  projection_lr: 1.0e-4
+  num_epochs: 5
+  seed: 42

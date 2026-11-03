@@ -1,0 +1,18 @@
+uncertainty:
+  method: "confidence_weighted"
+  clipping_floor: 0.10
+  temperature: 1.0
+  label_smoothing: 0.05
+  methods_to_compare:
+    - "standard_ce"
+    - "label_smoothing"
+    - "class_weighted"
+    - "confidence_weighted"
+    - "confidence_filtered"
+  filtering_threshold: 0.65
+
+data:
+  split_file: "data/processed/splits_protocol_a.parquet"
+  text_column: "text_clean"
+  confidence_column: "confidence"
+  pseudo_label_column: "sentiment"

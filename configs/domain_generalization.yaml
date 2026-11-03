@@ -1,0 +1,8 @@
+domain_generalization:
+  method: "dann"  # Domain-Adversarial Neural Network
+  discriminator_hidden_dim: 256
+  num_domains: 4  # Seasons 1, 2, 3, 4
+  loss_weight_beta: 0.10
+  alpha_schedule: "dynamic"  # 2.0 / (1.0 + exp(-10 * p)) - 1.0
+  seasons: [1, 2, 3, 4]
+  balanced_sampling: true
