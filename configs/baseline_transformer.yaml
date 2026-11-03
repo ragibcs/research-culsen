@@ -1,8 +1,8 @@
 model:
   candidates:
     - name: "banglabert"
-      pretrained_model_name: "sagorsarker/banglabert"
-      tokenizer_name: "sagorsarker/banglabert"
+      pretrained_model_name: "csebuetnlp/banglabert"
+      tokenizer_name: "csebuetnlp/banglabert"
     - name: "xlm_roberta"
       pretrained_model_name: "xlm-roberta-base"
       tokenizer_name: "xlm-roberta-base"

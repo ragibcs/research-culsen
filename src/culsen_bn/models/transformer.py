@@ -16,7 +16,7 @@ class CulSenTransformerEncoder(nn.Module):
 
     def __init__(
         self,
-        pretrained_model_name: str = "sagorsarker/banglabert",
+        pretrained_model_name: str = "csebuetnlp/banglabert",
         num_labels: int = 2,
         dropout_rate: float = 0.2,
         pooling_strategy: str = "mean",  # 'mean' or 'cls'

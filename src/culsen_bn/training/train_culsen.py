@@ -37,7 +37,7 @@ class CulSenModel(nn.Module):
 
     def __init__(
         self,
-        pretrained_model_name: str = "sagorsarker/banglabert",
+        pretrained_model_name: str = "csebuetnlp/banglabert",
         projection_dim: int = 128,
         num_seasons: int = 4,
         enable_contrastive: bool = True,
@@ -90,7 +90,7 @@ class CulSenModel(nn.Module):
 def train_culsen_model(
     experiment_config: str = "configs/experiment.yaml",
     variant_name: str = "B5_full",
-    pretrained_model_name: str = "sagorsarker/banglabert",
+    pretrained_model_name: str = "csebuetnlp/banglabert",
 ) -> Dict[str, Any]:
     """
     Train and evaluate the proposed CulSen-BN framework or one of its ablation variants.
